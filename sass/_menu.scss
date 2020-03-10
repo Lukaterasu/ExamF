@@ -52,13 +52,40 @@ body {
     align-items: center;
     justify-content: space-around;
 }
-.grid-cell p{
+.grid-cell a{
     display: block;
+ 
+    color:white;
     margin-top: 10px;
 
 }
 .dup{
     margin-top:10px;
     background-color: red;
+}
+.one{
+    background-color: darken($c5, 40%);
+}
+.two{
+    background-color: darken($c5, 30%);
+}
+.three{
+    background-color: darken($c5, 20%);
+
+}
+.four{
+    background-color: darken($c5, 10%);
+
+}
+.five{
+    background-color: $c5;
+
+}
+.nom{
+    text-align: center;
+
+    background-color: grey;
+    border: 1px solid black;
+  
 }
 

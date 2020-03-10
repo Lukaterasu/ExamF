@@ -57,6 +57,7 @@ get_header();
         
                 $firstLetter = substr(get_the_title(),4,1);
                 $secondLetter= substr(get_the_title(),5,1);
+                $style = "";
                 $r = 0;
                 $c = 0; 
                
@@ -66,21 +67,27 @@ get_header();
 
                         case 1:
                         $r=2;
+                      
                             break;
                         case 2:
                         $r=3;
+                       
                             break;
                         case 3:
                         $r=4;
+                        
                             break;
                         case 4:
                             $r=5;
+                            
                             break;
                         case 5:
                             $r=6;
+                           
                             break;
                         case 6:
                             $r=7;
+                            
                             break;
                 
                         default: $r=0;
@@ -89,21 +96,27 @@ get_header();
                     switch ($secondLetter) {
                         case 1:
                         $c=1;
+                        $style = "one";
                             break;
                         case 2:
                         $c=2;
+                        $style = "two";
                             break;
                         case 3:
                         $c=3;
+                        $style = "three";
                             break;
                         case 4:
                             $c=4;
+                            $style = "four";
                             break;
                         case 5:
                             $c=5;
+                            $style = "five";
                             break;
                         case 6:
                             $c=6;
+                            // $style = "one";
                             break;
                 
                         default: $c=0;
@@ -127,7 +140,7 @@ get_header();
              
                      $gridArea = $r ."/". $c ;
 
-                     echo '<h3 class="grid-cell" style="grid-area:'.$gridArea.'">'.'<p><a href="#">'.substr(get_the_title(),0,7).'</a><p>'.'</h3>';
+                     echo '<h3 class="grid-cell '.$style.'" style="grid-area:'.$gridArea.'">'.'<p><a href="#">'.substr(get_the_title(),0,7).'</a><p>'.'</h3>';
                    
                 
                
@@ -137,6 +150,17 @@ get_header();
 
              
         }
+        $noms = array('Environnement', 'Animation', 'Design', 'programmation', 'Intégration');
+
+        for($e=0;$e < 5; $e++){
+            echo '<h3  class="nom" style="grid-area:1/'.$e.'">'.$noms[$e].'</h3>';
+
+        }
+        // echo '<h3  class="nom" style="grid-area:1/1">Environnement</h3>';
+        // echo '<h3 class="nom" style="grid-area:1/2">Animation</h3>';
+        // echo '<h3 class="nom" style="grid-area:1/3">Design</h3>';
+        // echo '<h3 class="nom" style="grid-area:1/4">Programmation</h3>';
+        // echo '<h3 class="nom" style="grid-area:1/5">Intégration</h3>';
         
        
 		?>

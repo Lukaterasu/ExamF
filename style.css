@@ -86,13 +86,40 @@ body {
       justify-content: space-around;
 }
 
-.grid-cell p {
+.grid-cell a {
   display: block;
+  color: white;
   margin-top: 10px;
 }
 
 .dup {
   margin-top: 10px;
   background-color: red;
+}
+
+.one {
+  background-color: #001a3f;
+}
+
+.two {
+  background-color: #002f72;
+}
+
+.three {
+  background-color: #0045a5;
+}
+
+.four {
+  background-color: #005ad8;
+}
+
+.five {
+  background-color: #0c71ff;
+}
+
+.nom {
+  text-align: center;
+  background-color: grey;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=style.css.map */
