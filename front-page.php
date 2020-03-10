@@ -33,12 +33,12 @@ get_header();
 
 		$args = array(
             "category_name" => "cours",
-			"posts_per_page"=> 29,
-		//	"orderby"
+			"posts_per_page"=> 30,
+            'orderby'=> 'post_name', 
 			"order"=> "ASC"
 		);
 		$query1 = new WP_Query($args);
-		while ( $query1->have_posts() ) {   //substr(get_post_field("post_name"), -2)
+		while ( $query1->have_posts() ) {   
 			$query1->the_post();
 			 echo '<h4>' . get_the_title() . '</h4>'; 
 		}
