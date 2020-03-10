@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: beige;
 }
 
 .nav {
@@ -10,4 +10,33 @@ body {
 }
 #post-2{
     display: none;
+}
+
+
+.text1{
+    color:red;
+}
+.text2{
+    color:blue;
+}
+.title:hover {
+    color: $color1;
+}
+.title:focus{
+    color: $color2;
+}
+.title:active{
+    color: $color3;
+}
+
+.site-description{
+    display: none;
+}
+#primary-menu{
+    display: none;
+}
+.petitMenu li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px;
 }

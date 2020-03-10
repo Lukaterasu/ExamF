@@ -12,16 +12,10 @@
  Text Domain:  underscore-enfant
 */
 body {
-  background-color: lightblue;
+  background-color: beige;
 }
 
-#primary-menu{
-  display: none;
-}
-.site-description{
-  display: none;
-}
-.nav li {
+.nav {
   display: inline-block;
 }
 
@@ -31,5 +25,39 @@ body {
 
 #post-2 {
   display: none;
+}
+
+.text1 {
+  color: red;
+}
+
+.text2 {
+  color: blue;
+}
+
+.title:hover {
+  color: #000000;
+}
+
+.title:focus {
+  color: #505050;
+}
+
+.title:active {
+  color: #ffff00;
+}
+
+.site-description {
+  display: none;
+}
+
+#primary-menu {
+  display: none;
+}
+
+.petitMenu li {
+  display: inline-block;
+  text-decoration: none;
+  margin: 20px;
 }
 /*# sourceMappingURL=style.css.map */
