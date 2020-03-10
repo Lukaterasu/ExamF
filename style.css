@@ -1,0 +1,35 @@
+/*
+ Theme Name:   Underscore Enfant
+ Theme URI:    http://example.com/underscores/
+ Description:  Twenty Fifteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     underscore
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  underscore-enfant
+*/
+body {
+  background-color: lightblue;
+}
+
+#primary-menu{
+  display: none;
+}
+.site-description{
+  display: none;
+}
+.nav li {
+  display: inline-block;
+}
+
+.edit-link {
+  display: none;
+}
+
+#post-2 {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
